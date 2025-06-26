@@ -5,11 +5,10 @@
 }
 
 window#waybar {
-  background: #22253D;
+  background: #22253d;
   border: 1px solid #b7c3df;
   border-radius: 10px;
 }
-
 
 #workspaces {
   margin: 0px 15px 0px 15px;
@@ -20,33 +19,32 @@ window#waybar {
   padding: 0.5rem 0.5rem;
   font-weight: 900;
   font-size: 13pt;
-  color: #40517A;
+  color: #40517a;
   border: none;
   border-radius: 8px;
 }
 
 #workspaces button.active {
-  color: #B7C3DF;
+  color: #b7c3df;
 }
 
 #workspaces button:hover {
-  color: #B7C3DF;
+  color: #b7c3df;
   box-shadow: none;
 }
 
 #window {
-  color: #B7C3DF;
+  color: #b7c3df;
   font-family: "Martian Mono";
 }
 
 #clock {
-  color: #B7C3DF;
+  color: #b7c3df;
   background: transparent;
 }
 
-#pulseaudio.muted {
+.mic-muted {
   color: #ff0000;
-  background:green;
 }
 
 
@@ -54,9 +52,10 @@ window#waybar {
 #tray,
 #clock,
 #custom-notification {
-  color: #B7C3DF;
+  color: #b7c3df;
   margin: 0px 15px 0px 0px;
 }
+
 #mpris {
   color: #dcdcdc;
   animation-name: blink;

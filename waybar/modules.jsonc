@@ -8,31 +8,31 @@
     "format-icons": {
       "urgent": "",
       "active": "●",
-      "default": "◦"
-    }
+      "default": "◦",
+    },
   },
 
   "hyprland/mode": {
-    "format": "<span style=\"italic\">{}</span>"
+    "format": "<span style=\"italic\">{}</span>",
   },
 
   "tray": {
-    "spacing": 10
+    "spacing": 10,
   },
 
   "clock": {
     "format": "{:%H:%M  %e %B %Y} ",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>"
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
   },
 
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    "format": "{volume}% {icon} {format_source}",
+    "format": "{icon}{volume}% {format_source}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
-    "format-source": "{volume}% ",
-    "format-source-muted": "",
+    "format-muted": "<span foreground='red'> </span>{format_source}",
+    "format-source": "",
+    "format-source-muted": "<span foreground='red'>  muted</span>",
     "format-icons": {
       "headphone": "",
       "hands-free": "",
@@ -40,9 +40,9 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": [" ", " ", " "]
+      "default": [" ", " ", " "],
     },
-    "on-click": "pavucontrol"
+    "on-click": "pavucontrol",
   },
 
   "custom/media": {
@@ -51,7 +51,7 @@
     "max-length": 40,
     "format-icons": {
       "spotify": "",
-      "default": "🎜"
+      "default": "🎜",
     },
     "escape": true,
     "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null",
@@ -64,9 +64,9 @@
         "shutdown": "shutdown",
         "reboot": "reboot",
         "suspend": "systemctl suspend",
-        "hibernate": "systemctl hibernate"
-      }
-    }
+        "hibernate": "systemctl hibernate",
+      },
+    },
   },
 
   "mpris": {
@@ -75,12 +75,12 @@
     "max-length": 100,
     "player-icons": {
       "default": "⏸",
-      "mpv": "🎵"
+      "mpv": "🎵",
     },
     "status-icons": {
-      "paused": "▶"
+      "paused": "▶",
     },
 
-    "ignored-players": ["firefox"]
-  }
+    "ignored-players": ["firefox"],
+  },
 }
